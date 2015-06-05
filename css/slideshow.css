@@ -429,7 +429,7 @@ a:hover, a:focus {
   font-weight: normal;
 }
 .deck-container:not(.no-status) > .slide {
-  background: url(../img/banner.png) bottom 10px left 10px no-repeat;
+  background: url(https://raw.githubusercontent.com/uiuc-cse/2015-09-14-ilgisa/gh-pages/img/banner.png) bottom 10px left 10px no-repeat;
   background-size: 150px;
 }
 .deck-container .slide :not(h1):not(h2) {
