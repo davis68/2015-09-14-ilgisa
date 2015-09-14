@@ -98,7 +98,7 @@ Another process that can occur is that platforms shift and subtly alter function
 
 I am not suggesting that you shouldn't be using Excel to process your data—far from it.  I am simply arguing that you need to be aware of how your data set's format will make it more or less accessible down the road, and how that encoding affects issues like transparency of changes and ease of processing and analysis.  Thus, to the extent possible, text-based formats should be used to ensure that the raw data of revisions remain trivially intelligible.  (This is clearly not possible with graphics, for instance.)
 
-In software development, there is a rule-of-thumb which states that you should keep your code separate from your code's configuration and input<sup>[[Davison2014](#Davison2014)]</sup>.  That is, if you hard-code in numbers like grid size or number of time steps, you make your code more difficult to use.  If you instead set the program or script to use a command-line flag or read a configuration file to set the useful parameters and load data, that makes the script itself more useful.  What I'm hinting at here is a similar idea for data:  the data set itself should be independent of the process, and although you may occasionally be tempted that it's useful to have the analysis sitting right there, it's generally far better in the long run to just keep things orthogonal.
+In software development, there is a rule-of-thumb which states that you should keep your code or scripts separate from any configuration and input<sup>[[Davison2014](#Davison2014)]</sup>.  That is, if you hard-code in numbers like grid size or number of time steps, you make your code more difficult to use.  If you instead set the program or script to use a command-line flag or read a configuration file to set the useful parameters and load data, that makes the script itself more useful.  What I'm hinting at here is a similar idea for data:  the data set itself should be independent of the process, and although you may occasionally be tempted that it's useful to have the analysis sitting right there, it's generally far better in the long run to just keep things orthogonal.
 
 What constitutes data and what constitutes process?  Things can get a little fuzzy when you start to include things like calculating the mean or standard deviation—which are they?
 
@@ -111,6 +111,8 @@ Now what should you do if part of your analysis process is manual—if it can't 
 #### Version control (Git)
 
 ![](./img/phd101212s.gif)
+
+https://uiuc-cse.github.io/2015-09-14-ilgisa/lessons/img/phd101212s.gif
 
 Version control is an increasingly inappropriate name for what you could also just call controlled change tracking.  Imagine doing all of your work in an efficient quality-controlled Dropbox that you share with your friends, that has a read-only version which faces the world but only with the bits and pieces you tell it to, and that requires any contributor to pen a brief note justifying every change in case you went down the wrong garden path.  A version control repository gives you peace of mind, like a shared backup server that lets you recover the thought process that originally led you to the changes you made.
 
